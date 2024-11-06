@@ -22,7 +22,7 @@ export default function RootLayout({
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <main>
           <Navigation/>
-          <div className="container max-w-4xl px-10 pt-12 mx-auto overflow-hidden">
+          <div className="container max-w-4xl px-6 md:px-8 lg:px-10 pt-5 md:py-10 lg:py-12 mx-auto overflow-hidden">
           {children}
           </div>
         </main>
