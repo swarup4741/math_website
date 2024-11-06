@@ -4,7 +4,7 @@ export default function Activities() {
   return (
     <div className="px-1 md:px-6 lg:px-10">
       <h1 className="subpixel-antialiased text-xl font-bold md:text-2xl lg:text-3xl mb-10 mt-10">Conferences/Seminars</h1>
-      <ul className="list-decimal">
+      <ul className="list-decimal m-3 md:text-lg lg:text-lg">
         <li className="mb-5">
           Contributory talk - <strong>Khovanov homology and exotic discs</strong>. <Link className="text-blue-500" href="https://rms2024.christuniversity.in/" target="_blank">RMS 2024</Link> (Upcoming)
         </li>

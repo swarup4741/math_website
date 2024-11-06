@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Personal website",
 };
 
-const inter = Inter({subsets: ['latin']})
+const font = Inter({subsets: ['latin']})
 
 export default function RootLayout({
   children,
@@ -18,11 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={font.className}>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <main>
           <Navigation/>
-          <div className="container max-w-4xl px-6 md:px-8 lg:px-10 pt-5 md:py-10 lg:py-12 mx-auto overflow-hidden">
+          <div className="container px-6 md:px-8 lg:px-10 pt-5 md:py-10 lg:py-12 mx-auto overflow-hidden">
           {children}
           </div>
         </main>
