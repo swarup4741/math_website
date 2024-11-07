@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   category: 'personal',
   creator: 'Swarup Kumar Das',
-  publisher: 'Swarup Kumar Das' 
+  publisher: 'Swarup Kumar Das'
 };
 
 const font = Inter({subsets: ['latin']})
