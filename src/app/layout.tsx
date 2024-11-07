@@ -6,7 +6,13 @@ import Navigation from "@components/Navigation";
 
 export const metadata: Metadata = {
   title: "Swarup Kumar Das",
-  description: "Personal website",
+  description: "This is my professional website",
+  verification: {
+    google: "HJeA2AkdrCjT6aE2kfF5DvoERrJcXjaHQi8W4ZSfA00"
+  },
+  category: 'personal',
+  creator: 'Swarup Kumar Das',
+  publisher: 'Swarup Kumar Das' 
 };
 
 const font = Inter({subsets: ['latin']})

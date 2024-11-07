@@ -1,5 +1,6 @@
 "use client"
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useTheme } from 'next-themes'
@@ -7,8 +8,12 @@ import { Moon, Sun } from './Icons'
 
 
 export default function Navigation() {
+
+  const pathname = usePathname();
+
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
+
   const navLinks = [
     {
       label: 'Research',
@@ -34,8 +39,8 @@ export default function Navigation() {
           <Image src={"/trefoil.gif"} width="40" height="40" alt='Trefoil'/>
           </Link>
           {navLinks.map(navLink => (
-            <li key={navLink.label}>
-              <Link href={navLink.url} passHref>
+            <li key={navLink.label} className={pathname === navLink.url ? "font-bold text-slate-900" : ""}>
+              <Link href={navLink.url} className='text-slate-600 dark:text-slate-200' passHref>
                   {navLink.label}
               </Link>
             </li>
