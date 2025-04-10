@@ -36,7 +36,7 @@ export default function Navigation() {
       <div className="max-w-5xl px-8 py-4 mx-auto">
         <ul className="flex items-center justify-between">
           <Link href="/">
-          <Image src={"/trefoil.gif"} width="40" height="40" alt='Trefoil'/>
+          <Image unoptimized src={"/trefoil.gif"} width="40" height="40" alt='Trefoil'/>
           </Link>
           {navLinks.map(navLink => (
             <li key={navLink.label} className={pathname === navLink.url ? "font-bold text-slate-900" : ""}>
