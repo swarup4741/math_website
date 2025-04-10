@@ -10,7 +10,7 @@ export default function Page() {
         </p>
 
         <div>
-        <h1 className="subpixel-antialiased text-xl font-bold md:text-2xl lg:text-3xl mb-10 mt-10">Articles (Published/Preprint)</h1>
+        <h1 className="subpixel-antialiased text-xl font-bold md:text-2xl lg:text-3xl mb-5 mt-10">Articles (Published/Preprint)</h1>
         <ol className="m-3 md:text-lg lg:text-lg list-decimal">
           <li className="mb-5">
             <h2 className="subpixel-antialiased font-semibold md:text-lg lg:text-lg">A spanning tree model for Khovanov homology, Rasmussen&apos;s s-invariant and exotic discs in the 4-ball</h2>
