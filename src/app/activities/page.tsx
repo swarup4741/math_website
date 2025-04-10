@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Activities() {
   return (
     <div className="px-1 md:px-6 lg:px-10">
-      <h1 className="subpixel-antialiased text-xl font-bold md:text-2xl lg:text-3xl mb-10 mt-10">Conferences/Seminars</h1>
+      <h1 className="subpixel-antialiased text-xl font-bold md:text-2xl lg:text-3xl mb-5 mt-8">Conferences/Seminars</h1>
       <ul className="list-decimal m-3 md:text-lg lg:text-lg">
       <li className="mb-5">
           Invited talk - <strong>A spanning tree model for Khovanov homology using algebraic Morse theory and its applications</strong>. <Link className="text-blue-500" href="http://comet.lehman.cuny.edu/behrstock/seminar/" target="_blank">CUNY Geometry and Topology Seminar 2025</Link>
