@@ -33,7 +33,7 @@ export default function Navigation() {
 
   return (
     <nav className="sticky top-0 z-20 bg-zinc-100 dark:bg-zinc-950 border-b border-gray-300 dark:border-gray-800">
-      <div className="max-w-5xl px-8 py-4 mx-auto">
+      <div className="max-w-5xl px-5 py-4 mx-auto">
         <ul className="flex items-center justify-between">
           <Link href="/">
           <Image unoptimized src={"/trefoil.gif"} width="40" height="40" alt='Trefoil'/>
