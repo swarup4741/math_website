@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   publisher: 'Swarup Kumar Das'
 };
 
-const font = Inter({weight: "400"})
+const font = Inter({subsets: ["latin"]})
 
 export default function RootLayout({
   children,
