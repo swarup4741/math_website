@@ -46,7 +46,7 @@ export default function Page() {
               differential in their chain complex was not explicitly defined. We
               explicitly define the combinatorial form of the differential
               within the spanning tree complex. We additionally provide a
-              description of Rasmussen's <Latex text={"$s-$invariant"} /> within
+              description of Rasmussen&apos;s <Latex text={"$s-$invariant"} /> within
               the context of the spanning tree complex. Applying our techniques,
               we identify a new infinite family of knots where each of them
               bounds a set of exotic discs within the <Latex text={"$4-$"}/>ball.
