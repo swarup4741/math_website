@@ -6,7 +6,7 @@ import Navigation from "@components/Navigation";
 
 export const metadata: Metadata = {
   title: "Swarup Kumar Das",
-  description: "This is my professional website",
+  description: "Hi, I am graduate student in TCG CREST working in low-dimensional topology.",
   verification: {
     google: "HJeA2AkdrCjT6aE2kfF5DvoERrJcXjaHQi8W4ZSfA00"
   },
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   publisher: 'Swarup Kumar Das'
 };
 
-const font = Inter({subsets: ['latin']})
+const font = Inter({weight: "400"})
 
 export default function RootLayout({
   children,
