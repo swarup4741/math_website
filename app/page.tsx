@@ -14,6 +14,7 @@ export default function Page() {
          alt="Profile picture"
          height={300}
          width={200}
+         priority
         />
       </div>
       <p className="mb-4">
