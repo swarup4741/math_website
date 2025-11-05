@@ -1,20 +1,54 @@
-import { BlogPosts } from 'app/components/posts'
+import Image from "next/image"
+import Link from "next/link"
+import Profile from './public/profile.jpg'
 
 export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        Swarup Kumar Das
       </h1>
+      <div className="mb-4">
+        <Image
+         src={Profile}
+         alt="Profile picture"
+         height={300}
+         width={200}
+        />
+      </div>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
-      <div className="my-8">
-        <BlogPosts />
+            I am a Ph.D. student at the{" "}
+            <Link
+              className="text-blue-400"
+              href="https://www.tcgcrest.org/researches/translational-research-in-mathematics-trim/"
+              target="_blank"
+            >
+              TRIM (Translation Research in Mathematics)
+            </Link>{" "}
+            vertical of{" "}
+            <Link
+              className="text-blue-400"
+              href="https://www.tcgcrest.org/institutes/iai/"
+              target="_blank"
+            >
+              Institute for Advancing Intelligence, TCG CREST.
+            </Link>
+            </p>
+            <p className="mb-4">
+            I am currently pursuing my research in low-dimensional
+            topology under the supervision of{" "}
+            <Link
+              href="https://www.tcgcrest.org/people/apratim-chakraborty/"
+              target="_blank"
+              className="text-blue-400"
+            >
+              Dr. Apratim Chakraborty
+            </Link>
+            .
+          </p>
+
+      <div className="my-4">
+        <p>Here is my <Link className="text-blue-400" href="https://drive.google.com/file/d/11gIEuFuVakPBRA_rA9YkmPv8RcEY5IbQ/view?usp=sharing" target="_blank">CV</Link></p>
       </div>
     </section>
   )

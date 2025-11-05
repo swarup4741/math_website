@@ -10,16 +10,19 @@ import { baseUrl } from './sitemap'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+  title: "Swarup Kumar Das",
+  description: "Hi, I am graduate student at TCG CREST working in low-dimensional topology.",
+  verification: {
+    google: "HJeA2AkdrCjT6aE2kfF5DvoERrJcXjaHQi8W4ZSfA00"
   },
-  description: 'This is my portfolio.',
+  category: 'personal',
+  creator: 'Swarup Kumar Das',
+  publisher: 'Swarup Kumar Das',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: "Swarup Kumar Das",
+    description: "Hi, I am graduate student at TCG CREST working in low-dimensional topology.",
     url: baseUrl,
-    siteName: 'My Portfolio',
+    siteName: 'Swarup Kumar Das',
     locale: 'en_US',
     type: 'website',
   },
