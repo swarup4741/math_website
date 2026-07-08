@@ -8,7 +8,7 @@ export default function Page() {
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         Swarup Kumar Das
       </h1>
-      <div className="mb-4">
+      <div className="mb-6">
         <Image
          src={Profile}
          alt="Profile picture"
@@ -49,7 +49,7 @@ export default function Page() {
           </p>
 
       <div className="my-4">
-        <p>Here is my <Link className="text-blue-400" href="https://drive.google.com/file/d/11gIEuFuVakPBRA_rA9YkmPv8RcEY5IbQ/view?usp=sharing" target="_blank">CV</Link></p>
+        <p>Here is my <Link className="text-blue-400" href="https://drive.google.com/file/d/1O7woE-KpHhyvIc83w6bmVScKntaK3J3w/view?usp=sharing" target="_blank">CV</Link></p>
       </div>
     </section>
   )

@@ -2,17 +2,17 @@ import Link from 'next/link'
 
 const navItems = {
   '/': {
-    name: 'home',
+    name: 'Home',
   },
   '/research': {
-    name: 'research',
+    name: 'Research',
   }
 }
 
 export function Navbar() {
   return (
-    <aside className="-ml-[8px] mb-16 tracking-tight">
-      <div className="lg:sticky lg:top-20">
+    <aside className="-ml-[8px] mb-8 tracking-tight">
+      <div className="lg:sticky lg:top-20 border-b border-b-gray-200 dark:border-b-gray-700">
         <nav
           className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           id="nav"
