@@ -1,26 +1,17 @@
 import Image from "next/image"
 import Link from "next/link"
-import Profile from './public/profile.jpg'
 
 export default function Page() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Swarup Kumar Das
-      </h1>
-      <div className="mb-6">
-        <Image
-         src={Profile}
-         alt="Profile picture"
-         height={300}
-         width={200}
-         priority
-        />
-      </div>
-      <p className="mb-4">
+    <section className="home-page">
+      <div className="profile-copy">
+        <header className="profile-header">
+          <h1 className="page-title">Swarup Kumar Das</h1>
+        </header>
+        <div className="intro-copy">
+          <p>
             I am a Ph.D. student at the{" "}
             <Link
-              className="text-blue-400"
               href="https://www.tcgcrest.org/researches/translational-research-in-mathematics-trim/"
               target="_blank"
             >
@@ -28,29 +19,38 @@ export default function Page() {
             </Link>{" "}
             vertical of{" "}
             <Link
-              className="text-blue-400"
               href="https://www.tcgcrest.org/institutes/iai/"
               target="_blank"
             >
               Institute for Advancing Intelligence, TCG CREST.
             </Link>
-            </p>
-            <p className="mb-4">
+          </p>
+          <p>
             I am currently pursuing my research in low-dimensional
             topology under the supervision of{" "}
             <Link
               href="https://www.tcgcrest.org/people/apratim-chakraborty/"
               target="_blank"
-              className="text-blue-400"
             >
               Dr. Apratim Chakraborty
             </Link>
             .
           </p>
-
-      <div className="my-4">
-        <p>Here is my <Link className="text-blue-400" href="https://drive.google.com/file/d/1O7woE-KpHhyvIc83w6bmVScKntaK3J3w/view?usp=sharing" target="_blank">CV</Link></p>
+          <p className="cv-line">
+            Here is my <Link href="https://drive.google.com/file/d/19Yv6ErDTNxy2VQkngVMHHphuyEMme0cG/view?usp=sharing" target="_blank">CV</Link>
+          </p>
+        </div>
       </div>
+      <Image
+        className="profile-portrait"
+        src="/profile.jpg"
+        alt="Profile picture"
+        height={587}
+        width={534}
+        sizes="(max-width: 600px) calc(100vw - 48px), 210px"
+        priority
+        unoptimized
+      />
     </section>
   )
 }

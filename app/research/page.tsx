@@ -31,18 +31,20 @@ export default function Research(){
 ]
 
     return(
-        <section>
-            <p className="mb-6">
+        <section className="research-page">
+            <div className="research-intro">
+            <p>
             I am interested in low-dimensional objects like knots/links, 3-manifolds, 4-manifolds and graphs. Moreover, I like to study these objects using invariants such as Khovanov homology, Heegard Floer homology, knot Floer homology, and Chromatic homology. Currently, I am interested in the following topics: 
-            <ol className="m-3 list-disc">
+            </p>
+            <ol className="research-topics">
                 <li>Spanning tree models of these homology theories and their applications</li>
                 <li>Problems related to Dehn surgery</li>
             </ol>
-            </p>  
-            <h1 className="mb-6 text-xl font-semibold tracking-tighter">Preprints</h1>
-            <div className="mb-8 mx-2">
-                <ol className="list-decimal">
-                  {paper_list.map((paper,id) => <li className="mb-4" key={id}>
+            </div>
+            <h1 className="section-title">Preprints</h1>
+            <div className="preprints">
+                <ol className="paper-list">
+                  {paper_list.map((paper,id) => <li key={id}>
                     <Paper 
                     title={paper.title}
                     authors={paper.authors}

@@ -17,6 +17,17 @@ https://portfolio-blog-starter.vercel.app
 
 ## How to Use
 
+### Local Development
+
+Use Node.js 24 or newer, as required by `package.json`. From the project directory, run:
+
+```bash
+npm ci
+npm run dev
+```
+
+Open http://localhost:3000 in your browser. Install dependencies on the machine where you run the site; copying `node_modules` between operating systems can break package links and native modules.
+
 You can choose from one of the following two methods to use this repository:
 
 ### One-Click Deploy
