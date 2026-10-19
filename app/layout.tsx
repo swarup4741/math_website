@@ -6,26 +6,19 @@ import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
-import { baseUrl } from './sitemap'
+import { site } from './lib/seo'
 
 export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
-  title: "Swarup Kumar Das",
-  description: "Hi, I am graduate student at TCG CREST working in low-dimensional topology.",
+  metadataBase: new URL(site.url),
+  title: site.name,
+  description: site.description,
+  authors: [{ name: site.name, url: site.url }],
   verification: {
     google: "HJeA2AkdrCjT6aE2kfF5DvoERrJcXjaHQi8W4ZSfA00"
   },
-  category: 'personal',
-  creator: 'Swarup Kumar Das',
-  publisher: 'Swarup Kumar Das',
-  openGraph: {
-    title: "Swarup Kumar Das",
-    description: "Hi, I am graduate student at TCG CREST working in low-dimensional topology.",
-    url: baseUrl,
-    siteName: 'Swarup Kumar Das',
-    locale: 'en_US',
-    type: 'website',
-  },
+  category: 'Mathematics',
+  creator: site.name,
+  publisher: site.name,
   robots: {
     index: true,
     follow: true,

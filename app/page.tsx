@@ -1,9 +1,18 @@
 import Image from "next/image"
 import Link from "next/link"
+import { JsonLd } from './components/json-ld'
+import { pageMetadata, profileStructuredData, site } from './lib/seo'
+
+export const metadata = pageMetadata({
+  title: site.homeTitle,
+  description: site.description,
+  path: '/',
+})
 
 export default function Page() {
   return (
     <section className="home-page">
+      <JsonLd data={profileStructuredData} />
       <div className="profile-copy">
         <header className="profile-header">
           <h1 className="page-title">Swarup Kumar Das</h1>

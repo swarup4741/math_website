@@ -1,4 +1,12 @@
 import Paper from "app/components/paper";
+import { JsonLd } from 'app/components/json-ld'
+import { pageMetadata, researchStructuredData, site } from 'app/lib/seo'
+
+export const metadata = pageMetadata({
+  title: site.researchTitle,
+  description: site.researchDescription,
+  path: '/research',
+})
 
 export default function Research(){
 
@@ -32,6 +40,7 @@ export default function Research(){
 
     return(
         <section className="research-page">
+            <JsonLd data={researchStructuredData} />
             <div className="research-intro">
             <p>
             I am interested in low-dimensional objects like knots/links, 3-manifolds, 4-manifolds and graphs. Moreover, I like to study these objects using invariants such as Khovanov homology, Heegard Floer homology, knot Floer homology, and Chromatic homology. Currently, I am interested in the following topics: 

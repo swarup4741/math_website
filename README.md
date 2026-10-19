@@ -51,3 +51,15 @@ pnpm dev
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+
+## Search visibility
+
+Page titles, descriptions, canonical URLs, and structured data are configured in `app/lib/seo.ts`. Keep `site.url` set to the public production domain. Google site verification is preserved in `app/layout.tsx`.
+
+After deploying SEO changes to Vercel:
+
+1. Confirm `/robots.txt`, `/sitemap.xml`, and `/profile.jpg` load on the production domain.
+2. In [Google Search Console](https://search.google.com/search-console), submit `https://swarup.vercel.app/sitemap.xml` and use URL Inspection to request indexing for `/` and `/research`.
+3. Check indexing and search performance reports after Google recrawls the pages. Sitemap submission and metadata improvements do not guarantee indexing or rankings.
+
+The sitemap omits modification dates rather than reporting a new content date on every build. If you add dates later, use actual dates of meaningful page updates.
